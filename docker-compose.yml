@@ -1,0 +1,18 @@
+services:
+  sensor_app:
+    build: .
+    container_name: sensor_app
+    restart: unless-stopped
+    privileged: true              # for I2C access
+    devices:
+      - /dev/i2c-1:/dev/i2c-1
+    volumes:
+      - /dev:/dev                # allow I²C
+    environment:
+      # MQTT (Home Assistant)
+      - MQTT_BROKER=homeassistant.local
+      - MQTT_PORT=1883
+      - MQTT_USER=homeassistant
+      - MQTT_PASSWORD=ha_pass
+    ports:
+      - '8000:8000'              # expose promethus metrics endpoint
