@@ -1,5 +1,7 @@
 # Air-You-Dying-For?
 
+<img src="./static/logo.png" width="200"/>
+
 A tongue-in-cheek, Dockerized indoor air quality monitoring station that measures CO₂, CO, temperature, and humidity, exposes metrics for Prometheus/Grafana, and publishes states to Home Assistant via MQTT.
 
 ---
@@ -121,4 +123,4 @@ Prometheus scrape interval and targets are defined in `prometheus.yml`.
 ---
 
 
-*“Air-You-Dying-For?” – because breathing shouldn’t be that hard.*
+*“Air-You-Dying-For?” – Because air is, like, so overrated.*
