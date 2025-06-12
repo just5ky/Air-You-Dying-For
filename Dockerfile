@@ -1,5 +1,5 @@
 # Use official slim Python runtime
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 # Install OS dependencies for I2C
 RUN apt-get update && \
