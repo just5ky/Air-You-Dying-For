@@ -48,11 +48,11 @@ jobs:
         uses: docker/metadata-action@902fa8ec7d6ecbf8d84d538b9b233a880e428804
         with:
           images: |
-            justsky/Air-You-Dying-For
+            justsky/air-you-dying-for
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           platforms: linux/amd64,linux/arm64
