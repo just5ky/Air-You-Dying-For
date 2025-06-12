@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 # Install OS dependencies for I2C
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends i2c-tools && \
+    apt-get install -y --no-install-recommends i2c-tools build-essential && \
     rm -rf /var/lib/apt/lists/*
 
 # Create app directory
