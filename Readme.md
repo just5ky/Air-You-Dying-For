@@ -19,7 +19,7 @@ A tongue-in-cheek, Dockerized indoor air quality monitoring station that measure
 ## 📁 Repository Structure
 
 ```
-air_quality_monitor/
+Air-You-Dying-For/
 ├── Dockerfile          # Builds sensor app image
 ├── docker-compose.yml  # Orchestrates Prometheus, Grafana, sensor_app
 ├── prometheus.yml      # Prometheus scrape config
@@ -34,8 +34,8 @@ air_quality_monitor/
 1. **Clone** this repo to your Pi:
 
    ```bash
-   git clone https://github.com/youruser/air_quality_monitor.git
-   cd air_quality_monitor
+   git clone https://just5ky/Air-You-Dying-For.git
+   cd Air-You-Dying-For
    ```
 
 2. **Enable I²C** on the Pi:
@@ -57,8 +57,8 @@ air_quality_monitor/
 
 5. **Configure Grafana**:
 
-   * Browse to `http://<Pi_IP>:3000` (admin/admin)
-   * Add Prometheus data source: `http://prometheus:9090`
+   * Browse to your grafana instance.
+   * Add Prometheus data source.
    * Import or build dashboards for CO₂, CO, temperature, humidity.
 
 6. **Integrate with Home Assistant**:
